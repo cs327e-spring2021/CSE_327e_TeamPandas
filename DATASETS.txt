@@ -1,0 +1,22 @@
+COVID-19 Cases + American Community Survey
+https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data
+https://www.census.gov/programs-surveys/acs/data.html
+
+Interesting attributes:
+- Irregular updates(that stem from a variety of reasons - see below) cause spikes in time data, because of this smoothing is often needed.
+  - Some countries/states only report Monday-Friday causing Monday spikes (compared to areas who report on weekend)
+  - Sometimes there issues uploading data and data is lost (October 10-11 for example in Florida)
+- Retrospective reporting, there are instances where large numbers of historical cases or deaths have been reported on a single day. These reports cause anomalous spikes.
+
+- Contains spatial data, could be useful in comparing Covid-cases in areas with different policies.
+- U.S broken down into states
+- UTC Standardized 
+- Has information on # of cases, testing rates, # of hospitalization, fatalities
+
+To combine the primary + secondary datasets
+- We can combine on states since the primary has the Province_State field and the secondary is divided by U.S states
+
+Insights we hope to gain:
+- Comparing differnt demographics (age, education, income) to their respective covid case rates, testing rates or hospitalization rates
+Possible questions:
+"Do education rates of different states effect number of cases and or testing"
