@@ -7,16 +7,17 @@ Interesting attributes:
   - Some countries/states only report Monday-Friday causing Monday spikes (compared to areas who report on weekend)
   - Sometimes there issues uploading data and data is lost (October 10-11 for example in Florida)
 - Retrospective reporting, there are instances where large numbers of historical cases or deaths have been reported on a single day. These reports cause anomalous spikes.
-
 - Contains spatial data, could be useful in comparing Covid-cases in areas with different policies.
 - U.S broken down into states
 - UTC Standardized 
 - Has information on # of cases, testing rates, # of hospitalization, fatalities
 
 To combine the primary + secondary datasets
-- We can combine on states since the primary has the Province_State field and the secondary is divided by U.S states
+- We can combine on states since the primary has the Province_State field that corresponds to the given state and the secondary dataset has the ability to is divide census data by U.S. states
 
 Insights we hope to gain:
 - Comparing differnt demographics (age, education, income) to their respective covid case rates, testing rates or hospitalization rates
+- Looking at these demographics across different states to see discrepancies between testing rates and hospitalization rates
 Possible questions:
-"Do education rates of different states effect number of cases and or testing"
+"Do education rates within different states affect number of cases and or testing?"
+"Does income level (different indicators such as rent cost, income level, food stamps, etc) affect hospitalization or testing rate?"
